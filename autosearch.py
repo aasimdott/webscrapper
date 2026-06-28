@@ -8,7 +8,7 @@ with sync_playwright() as p:
 
     #2.Go to a website that actually has a search bar!
     print("Opening DuckDuckGo...")
-    page.goto("https://duckduckgo.com")
+    page.goto("https://google.com")
 
     # 3. Target the search bar using its HTML name property -> [name="q"]
     # We use square brackets in Playwright to find attributes like name, placeholder, etc.
