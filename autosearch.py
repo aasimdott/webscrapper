@@ -2,11 +2,11 @@ import time
 from playwright.sync_api import sync_playwright
 
 with sync_playwright() as p:
-    # 1. Fire up your native secure BlackArch Chromium engine
+    #1. Fire up your native secure BlackArch Chromium engine
     browser = p.chromium.launch(headless=False, executable_path="/usr/bin/chromium")
     page = browser.new_page()
 
-    # 2. Go to a website that actually has a search bar!
+    #2.Go to a website that actually has a search bar!
     print("Opening DuckDuckGo...")
     page.goto("https://duckduckgo.com")
 
@@ -33,3 +33,4 @@ with sync_playwright() as p:
     print("Success! Screenshot saved as 'duckduckgo_results.png'")
 
     browser.close()
+#close
