@@ -1,6 +1,7 @@
 import time
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
+#take input
 searc = input("Enter what you want to search for on Amazon: ")
 with sync_playwright() as p:
     # 1. Open the browser
